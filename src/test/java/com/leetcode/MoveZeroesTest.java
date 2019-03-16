@@ -6,8 +6,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Solution for _ problem.
- * Test cases for problem.
+ * Test cases for MoveZeroes problem.
  *
  * @author Vasyl Grygoryev (aka Basil Gregory)
  *         created on 3/16/19
