@@ -62,51 +62,33 @@ public class IntegerToEnglishWords {
             return twoDigitsLess20(n);
         }
 
-        return ten(n) + addWhiteSpace(oneDigit(n % 10));
+        return ten(n / 10) + addWhiteSpace(oneDigit(n % 10));
     }
 
     public String ten(int n) {
-        switch (n / 10) {
-            case 2: return "Twenty";
-            case 3: return "Thirty";
-            case 4: return "Forty";
-            case 5: return "Fifty";
-            case 6: return "Sixty";
-            case 7: return "Seventy";
-            case 8: return "Eighty";
-            case 9: return "Ninety";
+        String[] d = {"Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
+        if (n >= 2 && n <= 9) {
+            return d[n - 2];
         }
+
         return "";
     }
 
     public String twoDigitsLess20(int n) {
-        switch (n) {
-            case 10: return "Ten";
-            case 11: return "Eleven";
-            case 12: return "Twelve";
-            case 13: return "Thirteen";
-            case 14: return "Fourteen";
-            case 15: return "Fifteen";
-            case 16: return "Sixteen";
-            case 17: return "Seventeen";
-            case 18: return "Eighteen";
-            case 19: return "Nineteen";
+        String[] d = {"Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
+        if (n >= 10 && n <= 19) {
+            return d[n - 10];
         }
+
         return "";
     }
 
     public String oneDigit(int n) {
-        switch (n) {
-            case 1: return "One";
-            case 2: return "Two";
-            case 3: return "Three";
-            case 4: return "Four";
-            case 5: return "Five";
-            case 6: return "Six";
-            case 7: return "Seven";
-            case 8: return "Eight";
-            case 9: return "Nine";
+        String[] d = {"One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};
+        if (n >=1 && n <= 9) {
+            return d[n - 1];
         }
+
         return "";
     }
 
