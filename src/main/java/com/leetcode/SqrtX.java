@@ -18,10 +18,9 @@ public class SqrtX {
         int right = x;
 
         while (left < right) {
-            int mid = (left + right) / 2 ;
-            int x_div_mid = x / mid;
+            int mid = (left + right) / 2;
 
-            if (mid > x_div_mid) {
+            if (mid > x / mid) {
                 right = mid - 1;
             }
             else {
