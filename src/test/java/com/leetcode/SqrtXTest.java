@@ -5,8 +5,7 @@ import org.junit.*;
 import static org.junit.Assert.*;
 
 /**
- * Solution for _ problem.
- * Test cases for problem.
+ * Test cases for SqrtX problem.
  *
  * @author Vasyl Grygoryev (aka Basil Gregory)
  *         created on 3/21/19
